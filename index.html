@@ -6,21 +6,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
 <style>
 body,h1,h5 {font-family: "Raleway", sans-serif}
+
 body, html {height: 100%}
 .bgimg {
   background-image: url("assets/gsco_logo_mobile.jpeg");
   min-height: 100vh;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-color: #f0f0f0; /* Add a background color */
 }
 
 @media (min-width: 769px) {
   .bgimg {
     background-image: url("assets/gsco_logo.jpeg");
-    background-attachment: fixed;
+    background-attachment: scroll; /* Changed from fixed to scroll */
   }
 }
 
@@ -28,6 +31,7 @@ body, html {height: 100%}
   width: 20%;
   height: auto;
   margin-bottom: 10px;
+  max-width: 200px; /* Add a max-width */
 }
 
 @media (max-width: 600px) {
