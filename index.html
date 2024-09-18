@@ -15,18 +15,22 @@ body, html {height: 100%}
   background-position: center;
   background-size: cover;
 }
+
+.bottom-left-image {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  margin-bottom: 10px; /* Space between image and text */
+}
 </style>
 </head>
 <body>
 
 <div class="bgimg w3-display-container w3-text-white">
-  <div class="w3-display-middle w3-jumbo">
-    <p>logo</p>
-  </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
   </div>
   <div class="w3-display-bottomleft w3-container">
+    <img src="assets/irrg_logo.jpg" alt="irrg_logo" class="bottom-left-image">
     <p class="w3-xlarge">Industrial Resilience Research Group | Institute for Manufacturing</p>
     <p class="w3-large">University of Cambridge</p>
   </div>
@@ -45,7 +49,7 @@ body, html {height: 100%}
       <p>For more information on the Global Supply Chain Observatory:</p>
       <form action="/action_page.php" target="_blank">
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Company" required name="Company"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Company" required name="Company"></p>
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
         <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
       </form>
