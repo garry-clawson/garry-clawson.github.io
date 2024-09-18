@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <title>GSCO</title>
 <meta charset="UTF-8">
@@ -10,25 +10,31 @@
 body,h1,h5 {font-family: "Raleway", sans-serif}
 body, html {height: 100%}
 .bgimg {
-  background-image: url("assets/gsco_logo.jpeg");
+  background-image: url("assets/gsco_logo_mobile.jpeg");
   min-height: 100vh;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
   background-repeat: no-repeat;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 769px) {
   .bgimg {
-    background-attachment: scroll;
-    background-position: top center;
+    background-image: url("assets/gsco_logo.jpeg");
+    background-attachment: fixed;
   }
 }
 
 .bottom-left-image {
-  width: 20%; /* Adjust as needed */
+  width: 20%;
+  max-width: 150px;
   height: auto;
-  margin-bottom: 10px; /* Space between image and text */
+  margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+  .bottom-left-image {
+    width: 30%;
+  }
 }
 </style>
 </head>
@@ -39,11 +45,14 @@ body, html {height: 100%}
     <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
   </div>
   <div class="w3-display-bottomleft w3-container">
-    <img src="assets/irrg_logo.jpg" alt="irrg_logo" class="bottom-left-image">
+    <img src="assets/irrg_logo.jpg" 
+         srcset="assets/irrg_logo_small.jpg 300w,
+                 assets/irrg_logo.jpg 600w"
+         sizes="(max-width: 600px) 30vw, 20vw"
+         alt="irrg_logo" 
+         class="bottom-left-image">
   </div>
 </div>
-
-
 
 <!-- Contact Modal -->
 <div id="contact" class="w3-modal">
