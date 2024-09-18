@@ -1,285 +1,92 @@
 <!DOCTYPE html>
 <html>
-<title>PhD Research</title>
+<head>
+<title>GSCO</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Arial", sans-serif}
-
-/* Callaspsible boxes headers for FAQ and feedback page */
-.collapsible {
-  width: 90%;
-  border-radius: 5px;
-  border-style: none;
-  padding:16px;
-  margin-top:4px;
-  margin-bottom:4px;
-  text-align: left;
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: src="assets/gsco_logo.jpeg";
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
 }
-
-/* Callapsible Containers */
-
-.collapsible:after {
-  content: '\02795'; /* Unicode character for "plus" sign (+) */
-  font-size: 10px;
-  float: right;
-}
-
-.active:after {
-  content: "\2796"; /* Unicode character for "minus" sign (-) */
-}
-
-.content {
-  padding: 0 18px;
-  width: 90%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: white;
-}
-
-/* Search Bar */
-.search {
-  width: 70%;
-  position: relative;
-  display: flex;
-}
-
-.searchTerm {
-  width: 80%;
-  border: 3px solid  #008080;
-  border-right: none;
-  padding: 5px;
-  height: 36px;
-  border-radius: 5px 0 0 5px;
-  outline: none;
-}
-
-.searchButton {
-  width: 40px;
-  height: 36px;
-  border: 1px;
-  background:  #008080;
-  text-align: center;
-  color: #fff;
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 30%;
-  position: absolute;
-}
-
-
-
 </style>
+</head>
+<body>
 
-<body class="w3-white w3-content" style="max-width:1600px">
-
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-  <div class="w3-container">
-    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
-      <i class="fa fa-remove"></i>
-    </a>
-    <img src="assets/garry_clawson.png" style="width:45%;" class="w3-round"><br><br>
-    <h4><b>PHD READING</b></h4>
+<div class="bgimg w3-display-container w3-text-white">
+  <div class="w3-display-middle w3-jumbo">
+    <p>logo</p>
   </div>
-    
-  <a href="#traceability" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>TRACEABILITY</a> 
-  <a href="#supply_chain" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>SUPPLY CHAIN</a> 
-
-  <div class="w3-bar-block">
-      <div class="wrap w3-bar-item w3-padding">
-         <div class="search">
-            <input type="text" id="search-box" class="searchTerm" placeholder="Search Abstracts ...">
-            <button type="submit" class="searchButton">
-              <i class="fa fa-search"></i>
-           </button>
-         </div>
-      </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('menu').style.display='block'" class="w3-button w3-black">menu</button></p>
+    <p><button onclick="document.getElementById('contact').style.display='block'" class="w3-button w3-black">contact</button></p>
   </div>
-
-</nav>
-
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" id="myUL" style="margin-left:300px">
-
-
-<!----------- New Section ------------>
-  <div class="w3-row-padding" id="traceability">
-    <div class="w3-container">
-      <h1><b>TRACEABILITY</b></h1>
-    </div>
-
-
-    <div class="card" data-title="1">
-      <button type="button" class="collapsible w3-container w3-khaki w3-hover-opacity">
-      <p style="font-size:16px;"><b>New school meal regulations increase fruit consumption and do not increase total plate waste</b><br></p>
-
-        Schwartz, M. B., Henderson, K. E., Read, M., Danna, N., & Ickovics, J. R. (2015). New school meal regulations increase fruit consumption and do not increase total plate waste. Childhood Obesity, 11(3), 242-247.
-
-        <p><b style="font-size:14px;">Date Read</b> 13 April 2023</p>
-      </button>
-
-      <div class="content">
-        <p><b>ABSTRACT</b><br>
-        Both in an update to the brief, and in an official announcement of the changes - clear communication is necessary for remote study to be viable.  - The brief makes no mention of a cover page, even though the program leader has confirmed we should include one. - The brief states the proposal should include a "...review of project progress.", but the listed 7 sections do not account for such. How can we review progress made on a project that has not yet even been proposed?  It should also be noted that the cohort received the brief late (and - initially - partially incomplete), as defined by the opening statement "[...][briefs] should be made available prior to the commencement of the module [...]".
-      </p>
-      </div>
-    </div>
-
-
-    <div class="card" data-title="2">
-      <button type="button" class="collapsible w3-container w3-khaki w3-hover-opacity">
-      <p style="font-size:16px;"><b>New school meal regulations increase fruit consumption and do not increase total plate waste</b><br></p>
-
-        Schwartz, M. B., Henderson, K. E., Read, M., Danna, N., & Ickovics, J. R. (2015). New school meal regulations increase fruit consumption and do not increase total plate waste. Childhood Obesity, 11(3), 242-247.
-
-        <p><b style="font-size:14px;">Date Read</b> 13 April 2023</p>
-      </button>
-
-      <div class="content">
-        <p><b>ABSTRACT</b><br>
-        Both in an update to the brief, and in an official announcement of the changes - clear communication is necessary for remote study to be viable.  - The brief makes no mention of a cover page, even though the program leader has confirmed we should include one. - The brief states the proposal should include a "...review of project progress.", but the listed 7 sections do not account for such. How can we review progress made on a project that has not yet even been proposed?  It should also be noted that the cohort received the brief late (and - initially - partially incomplete), as defined by the opening statement "[...][briefs] should be made available prior to the commencement of the module [...]".
-      </p>
-      </div>
-    </div>
-
-    <div class="card" data-title="3">
-      <button type="button" class="collapsible w3-container w3-khaki w3-hover-opacity">
-      <p style="font-size:16px;"><b>New school meal regulations increase fruit consumption and do not increase total plate waste</b><br></p>
-
-        Schwartz, M. B., Henderson, K. E., Read, M., Danna, N., & Ickovics, J. R. (2015). New school meal regulations increase fruit consumption and do not increase total plate waste. Childhood Obesity, 11(3), 242-247.
-
-        <p><b style="font-size:14px;">Date Read</b> 13 April 2023</p>
-      </button>
-
-      <div class="content">
-        <p><b>ABSTRACT</b><br>
-        Both in an update to the brief, and in an official announcement of the changes - clear communication is necessary for remote study to be viable.  - The brief makes no mention of a cover page, even though the program leader has confirmed we should include one. - The brief states the proposal should include a "...review of project progress.", but the listed 7 sections do not account for such. How can we review progress made on a project that has not yet even been proposed?  It should also be noted that the cohort received the brief late (and - initially - partially incomplete), as defined by the opening statement "[...][briefs] should be made available prior to the commencement of the module [...]".
-      </p>
-      </div>
-    </div>
-
-
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">monday - friday 10-23 | saturday 14-02</p>
+    <p class="w3-large">42 village St, New York</p>
+    <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
   </div>
-
-
-
-
-
-
-<!----------- New Section ------------->
-  <div class="w3-row-padding" id="supply_chain">
-    <div class="w3-container">
-      <h1><b>SUPPLY CHAIN</b></h1>
-    </div>
-
-
-    <div class="card" data-title="4">
-      <button type="button" class="collapsible w3-container w3-khaki w3-hover-opacity">
-      <p style="font-size:16px;"><b>New school meal regulations increase fruit consumption and do not increase total plate waste</b><br></p>
-
-        Schwartz, M. B., Henderson, K. E., Read, M., Danna, N., & Ickovics, J. R. (2015). New school meal regulations increase fruit consumption and do not increase total plate waste. Childhood Obesity, 11(3), 242-247.
-
-        <p><b style="font-size:14px;">Date Read</b> 13 April 2023</p>
-      </button>
-
-      <div class="content">
-        <p><b>ABSTRACT</b><br>
-        Both in an update to the brief, and in an official announcement of the changes - clear communication is necessary for remote study to be viable.  - The brief makes no mention of a cover page, even though the program leader has confirmed we should include one. - The brief states the proposal should include a "...review of project progress.", but the listed 7 sections do not account for such. How can we review progress made on a project that has not yet even been proposed?  It should also be noted that the cohort received the brief late (and - initially - partially incomplete), as defined by the opening statement "[...][briefs] should be made available prior to the commencement of the module [...]".
-      </p>
-      </div>
-    </div>
-
-
-    <div class="card" data-title="5">
-      <button type="button" class="collapsible w3-container w3-khaki w3-hover-opacity">
-      <p style="font-size:16px;"><b>New school meal regulations increase fruit consumption and do not increase total plate waste</b><br></p>
-
-        Schwartz, M. B., Henderson, K. E., Read, M., Danna, N., & Ickovics, J. R. (2015). New school meal regulations increase fruit consumption and do not increase total plate waste. Childhood Obesity, 11(3), 242-247.
-
-        <p><b style="font-size:14px;">Date Read</b> 13 April 2023</p>
-      </button>
-
-      <div class="content">
-        <p><b>ABSTRACT</b><br>
-        Both in an update to the brief, and in an official announcement of the changes - clear communication is necessary for remote study to be viable.  - The brief makes no mention of a cover page, even though the program leader has confirmed we should include one. - The brief states the proposal should include a "...review of project progress.", but the listed 7 sections do not account for such. How can we review progress made on a project that has not yet even been proposed?  It should also be noted that the cohort received the brief late (and - initially - partially incomplete), as defined by the opening statement "[...][briefs] should be made available prior to the commencement of the module [...]".
-      </p>
-      </div>
-    </div>
-
-
-    <div class="card" data-title="1">
-      <button type="button" class="collapsible w3-container w3-khaki w3-hover-opacity">
-      <p style="font-size:16px;"><b>New school meal regulations increase fruit consumption and do not increase total plate waste</b><br></p>
-
-        Schwartz, M. B., Henderson, K. E., Read, M., Danna, N., & Ickovics, J. R. (2015). New school meal regulations increase fruit consumption and do not increase total plate waste. Childhood Obesity, 11(3), 242-247.
-
-        <p><b style="font-size:14px;">Date Read</b> 13 April 2023</p>
-      </button>
-
-      <div class="content">
-        <p><b>ABSTRACT</b><br>
-        Both in an update to the brief, and in an official announcement of the changes - clear communication is necessary for remote study to be viable.  - The brief makes no mention of a cover page, even though the program leader has confirmed we should include one. - The brief states the proposal should include a "...review of project progress.", but the listed 7 sections do not account for such. How can we review progress made on a project that has not yet even been proposed?  It should also be noted that the cohort received the brief late (and - initially - partially incomplete), as defined by the opening statement "[...][briefs] should be made available prior to the commencement of the module [...]".
-      </p>
-      </div>
-
-
-    </div>
-
-
-
-
-
-
-
-
-<!----------- End page content ------------>
 </div>
+
+<!-- Menu Modal -->
+<div id="menu" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('menu').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Starters</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Tomato Soup <b>$2.50</b></h5>
+      <h5>Chicken Salad <b>$3.50</b></h5>
+      <h5>Bread and Butter <b>$1.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Main Courses</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Grilled Fish and Potatoes <b>$8.50</b></h5>
+      <h5>Italian Pizza <b>$5.50</b></h5>
+      <h5>Veggie Pasta <b>$4.00</b></h5>
+      <h5>Chicken and Potatoes <b>$6.50</b></h5>
+      <h5>Deluxe Burger <b>$5.00</b></h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>Desserts</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Fruit Salad <b>$2.50</b></h5>
+      <h5>Ice cream <b>$2.00</b></h5>
+      <h5>Chocolate Cake <b>$4.00</b></h5>
+      <h5>Cheese <b>$5.50</b></h5>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Modal -->
+<div id="contact" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('contact').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Contact</h1>
+    </div>
+    <div class="w3-container">
+      <p>Reserve a table, ask for today's special or just send us a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+        <p><button class="w3-button" type="submit">SEND MESSAGE</button></p>
+      </form>
+    </div>
+  </div>
+</div>
+
 </body>
-
-<script>
-
-// Search Box
-let searchBox = document.querySelector('#search-box');
-let papers = document.querySelectorAll('.card');
-
-function getResults(e) {
-  papers.forEach(val => {
-    val.style.display = 'none';
-    val.dataset.title.includes(e.target.value) ?
-      val.style.display = 'block' : null;
-  })
-}
-searchBox.addEventListener('keyup', getResults)
-
-// Populates the callapsible
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.maxHeight){
-      content.style.maxHeight = null;
-    } else {
-      content.style.maxHeight = content.scrollHeight + "px";
-    } 
-  });
-}
-
-</script>
-
 </html>
